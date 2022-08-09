@@ -1,4 +1,5 @@
 from random import randint
+from dadosClientes import *
 
 class cliente:
     def __init__(self, nome, conta, saldo = 0 ) -> None:
@@ -12,8 +13,10 @@ class cliente:
         self.documento = str(input('Qual o numero do seu documento: '))
         self.conta = randint(00000,99999)
         self.digito = randint(0,9)
+        conta = (f'{self.conta}-{self.digito}')
         self.saldo = 0
-        print(f'{self.nome}, o numero da sua conta aberta é {self.conta}-{self.digito}')
+        print(f'{self.nome}, o numero da sua conta aberta é {conta}')
+        inclui_cliente_banco(self.nome,self.documento, conta, self.saldo)
 
     def lista_cliente(self):
         lista_clientes = []
