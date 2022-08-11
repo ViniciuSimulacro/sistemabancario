@@ -41,8 +41,11 @@ class acao_cliente(cliente):
         self.saldo = self.saldo - valor_saque
 
     def deposito(self):
+        conta = str(input('Qual o numero da sua conta: '))
         valor_deposito = int(input('Quanto você quer depositar? '))
-        print(f'Você depositou R$ {valor_deposito} da conta {self.conta}, o seu saldo agora é R$ {self.saldo + valor_deposito}')
+        print(f'Você depositou R$ {valor_deposito} na conta {conta}, o seu saldo agora é R$ {self.saldo + valor_deposito}')
         self.saldo = self.saldo + valor_deposito
+
+
 
     
