@@ -63,9 +63,8 @@ def deposita():
     comando_SQL = comando
     cursor.execute(comando_SQL) 
     valores_lidos = cursor.fetchall()
-    listagem = []
     for item in valores_lidos:
-        listagem.append(item)
+        pass
     saldo = (item[4])
     print(f'O seu saldo atual é de R$ {saldo}')
     comando2 = "UPDATE clientes SET saldo = '" + str(saldo + deposito) + "' WHERE conta = '" + conta + "'"
