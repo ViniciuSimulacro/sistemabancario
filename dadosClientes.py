@@ -70,9 +70,7 @@ def deposita():
     comando2 = "UPDATE clientes SET saldo = '" + str(saldo + deposito) + "' WHERE conta = '" + conta + "'"
     comando_SQL2 = comando2
     cursor.execute(comando_SQL2) 
-<<<<<<< HEAD
     print(f'Você depositou R$ {deposito} na conta {conta}, agora o seu saldo é R$ {saldo + deposito}')
-=======
     print(f'Você depositou {deposito} na conta {conta}, agora o seu saldo é R$ {saldo}')
->>>>>>> 1a6d0923cef10f75ccd9b2522c9a8728ddc08a52
+
 
