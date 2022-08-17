@@ -18,7 +18,7 @@ class cliente:
         print(f'{self.nome}, o numero da sua conta aberta é {conta}')
         inclui_cliente_banco(self.nome,self.documento, conta, self.saldo)
 
-    def lista_cliente(self):
+    '''def lista_cliente(self):
         lista_clientes = []
         cliente_conta = {'nome': self.nome, 'documento': self.documento, 'conta': (f'{self.conta}-{self.digito}'), 'saldo': self.saldo}
         lista_clientes.append(cliente_conta)
@@ -44,7 +44,7 @@ class acao_cliente(cliente):
         conta = str(input('Qual o numero da sua conta: '))
         valor_deposito = int(input('Quanto você quer depositar? '))
         print(f'Você depositou R$ {valor_deposito} na conta {conta}, o seu saldo agora é R$ {self.saldo + valor_deposito}')
-        self.saldo = self.saldo + valor_deposito
+        self.saldo = self.saldo + valor_deposito'''
 
 
 
